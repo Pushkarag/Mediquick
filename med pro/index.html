@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediQuick - Instant Medicine Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1><i class="fas fa-pills"></i> MediQuick</h1>
+                <p>Your instant medicine delivery partner</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="products.html"><i class="fas fa-medkit"></i> Medicines</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="emergency.html" class="emergency-btn"><i class="fas fa-ambulance"></i> Emergency</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Medicine Delivered to Your Doorstep in 30 Minutes</h2>
+                <p>24/7 service with certified pharmacists</p>
+                <a href="products.html" class="btn">Order Now</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>Fast Delivery</h3>
+                <p>Get medicines within 30 minutes in emergency cases</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Verified Medicines</h3>
+                <p>100% genuine medicines from licensed pharmacies</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-user-md"></i>
+                <h3>Doctor Consult</h3>
+                <p>Free consultation with certified doctors</p>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About MediQuick</h2>
+            <p>We are a team of healthcare professionals and technologists committed to making healthcare accessible to everyone. Our platform connects you with nearby pharmacies and delivery partners to ensure you get your medicines when you need them the most.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Medicines</a></li>
+                    <li><a href="#">Prescription Upload</a></li>
+                    <li><a href="#">Health Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> 24/7 Helpline: 1800-123-4567</p>
+                <p><i class="fas fa-envelope"></i> support@mediquick.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Head Office: 123 Health Street, Medical City</p>
+            </div>
+            <div class="footer-section">
+                <h3>Download Our App</h3>
+                <div class="app-download">
+                    <img src="images/google-play.png" alt="Google Play">
+                    <img src="images/app-store.png" alt="App Store">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 MediQuick. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot-container">
+        <div id="chatbot"></div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>
+<button id="view-cart-btn">
+    <span class="cart-count">0</span> Items in Cart
+</button>

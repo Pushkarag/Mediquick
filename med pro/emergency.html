@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Services | MediQuick</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Same header as index.html -->
+    </header>
+
+    <main>
+        <section class="emergency-services">
+            <h2>Emergency Medical Assistance</h2>
+            <div class="emergency-options">
+                <div class="emergency-card ambulance">
+                    <i class="fas fa-ambulance"></i>
+                    <h3>Call Ambulance</h3>
+                    <p>Immediate medical transportation</p>
+                    <button class="emergency-btn" onclick="callAmbulance()">
+                        <i class="fas fa-phone"></i> Call 108
+                    </button>
+                </div>
+                <div class="emergency-card doctor">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Emergency Doctor</h3>
+                    <p>Connect with a doctor immediately</p>
+                    <button class="emergency-btn" onclick="callDoctor()">
+                        <i class="fas fa-phone"></i> Call Doctor
+                    </button>
+                </div>
+                <div class="emergency-card poison">
+                    <i class="fas fa-biohazard"></i>
+                    <h3>Poison Control</h3>
+                    <p>For accidental poison ingestion</p>
+                    <button class="emergency-btn" onclick="callPoisonControl()">
+                        <i class="fas fa-phone"></i> Call 1800-111-222
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="emergency-contacts">
+            <h3>Important Emergency Numbers</h3>
+            <table>
+                <tr>
+                    <td>National Emergency</td>
+                    <td>112</td>
+                </tr>
+                <tr>
+                    <td>Police</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Fire</td>
+                    <td>101</td>
+                </tr>
+                <tr>
+                    <td>Women's Helpline</td>
+                    <td>1091</td>
+                </tr>
+                <tr>
+                    <td>Child Helpline</td>
+                    <td>1098</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="nearby-hospitals">
+            <h3>Find Nearby Hospitals</h3>
+            <div id="hospital-map"></div>
+            <div class="hospital-list">
+                <!-- Nearby hospitals would be listed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicines | MediQuick</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Same header as index.html -->
+    </header>
+
+    <main>
+        <section class="medicine-search">
+            <h2>Find Your Medicines</h2>
+            <div class="search-container">
+                <input type="text" placeholder="Search medicines...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filters">
+                <select>
+                    <option>All Categories</option>
+                    <option>Fever & Pain</option>
+                    <option>Diabetes</option>
+                    <option>Heart</option>
+                    <option>Allergy</option>
+                </select>
+                <select>
+                    <option>Sort By</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                    <option>Popularity</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="product-list">
+            <div id="product-list">
+                <!-- Products will be dynamically added here -->
+                <div class="product">
+                    <img src="amoxcilllin.jpeg" alt="Amoxicillin">
+                    <div class="product-info">
+                        <h3>Amoxicillin</h3>
+                        <p>Anxinotec 20 capsules</p>
+                        <p class="price">₹250.00</p>
+                        <p>550 mg</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product">
+                    <img src="ibopro.jpeg" alt="Ibuprofen">
+                    <div class="product-info">
+                        <h3>Ibuprofen</h3>
+                        <p>Pain relief tablets</p>
+                        <p class="price">₹120.00</p>
+                        <p class="discount">(Save 15%)</p>
+                        <p>400 mg</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product">
+                    <img src="paracetamol.jpeg" alt="paracetamol">
+                    <div class="product-info">
+                        <h3>Paracetamol</h3>
+                        <p>Fever reducer</p>
+                        <p class="price">₹45.00</p>
+                        <p>500 mg (10 tablets)</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product">
+                    <img src="Cetirizine.jpeg" alt="Cetirizine">
+                    <div class="product-info">
+                        <h3>Cetirizine</h3>
+                        <p>Antihistamine tablets</p>
+                        <p class="price">₹85.00</p>
+                        <p>10 mg (10 tablets)</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product">
+                    <img src="Omeprazole.jpg" alt="Omeprazole">
+                    <div class="product-info">
+                        <h3>Omeprazole</h3>
+                        <p>Acid reducer</p>
+                        <p class="price">₹150.00</p>
+                        <p>20 mg (10 capsules)</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product">
+                    <img src="Metaformin.jpeg" alt="Metformin">
+                    <div class="product-info">
+                        <h3>Metformin</h3>
+                        <p>Diabetes medication</p>
+                        <p class="price">₹180.00</p>
+                        <p>500 mg (10 tablets)</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

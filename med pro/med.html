@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Delivery Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Google Maps JavaScript API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <!-- Include Chatbot Script -->
+    <script src="chatbot.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Medicine Delivery Platform</h1>
+    </header>
+    <main>
+        <section id="map-section">
+            <h2>Delivery Rider Location</h2>
+            <div id="map"> <iframe src="" frameborder="0"></iframe></div>
+            <div id="rider-details">
+                <img id="rider-image" src="rider.jp
+                g" alt="Rider Image">
+                <p>Name: <span id="rider-name">John Doe</span></p>
+                <p>Delivery Fee: ₹<span id="delivery-fee">50</span></p>
+            </div>
+        </section>
+        <section id="bill-section">
+            <h2>Order Summary</h2>
+            <p>Total Medicine Cost: ₹<span id="medicine-cost">0</span></p>
+            <p>Delivery Fee: ₹<span id="delivery-fee-summary">50</span></p>
+            <p><strong>Total Bill: ₹<span id="total-bill">0</span></strong></p>
+        </section>
+    </main>
+    <!-- Chatbot Container -->
+    <div id="chatbot-container">
+        <div id="chatbot"></div>
+    </div>
+    <!-- Include Main JavaScript -->
+    <script src="main.js" defer></script>
+</body>
+</html>

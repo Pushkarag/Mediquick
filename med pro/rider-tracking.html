@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Order | MediQuick</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <!-- Same header as index.html -->
+    </header>
+
+    <main>
+        <section class="order-status">
+            <h2>Your Order #MED12345</h2>
+            <div class="status-timeline">
+                <div class="status-step active">
+                    <div class="status-icon"><i class="fas fa-check"></i></div>
+                    <p>Order Placed</p>
+                    <p class="status-time">10:15 AM</p>
+                </div>
+                <div class="status-step active">
+                    <div class="status-icon"><i class="fas fa-check"></i></div>
+                    <p>Pharmacy Confirmed</p>
+                    <p class="status-time">10:20 AM</p>
+                </div>
+                <div class="status-step">
+                    <div class="status-icon"><i class="fas fa-motorcycle"></i></div>
+                    <p>Out for Delivery</p>
+                    <p class="status-time">Estimated 10:45 AM</p>
+                </div>
+                <div class="status-step">
+                    <div class="status-icon"><i class="fas fa-home"></i></div>
+                    <p>Delivered</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rider-tracking">
+            <h2>Your Delivery Rider</h2>
+            <div class="tracking-container">
+                <div id="map"></div>
+                <div class="rider-info">
+                    <img src="rider.jpeg" alt="Rider" class="rider-photo">
+                    <h3>Rajesh Kumar</h3>
+                    <p><i class="fas fa-motorcycle"></i> Delivery Partner ID: DP78945</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+919876543210">+91 98765 43210</a></p>
+                    <p><i class="fas fa-star"></i> Rating: 4.8/5 (1,245 deliveries)</p>
+                    <p><i class="fas fa-clock"></i> Estimated Delivery Time: 10:45 AM (15 mins)</p>
+                    <button class="call-rider"><i class="fas fa-phone"></i> Call Rider</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="order-details">
+            <h2>Order Details</h2>
+            <div class="order-items">
+                <!-- Order items would be listed here -->
+            </div>
+            <div class="delivery-address">
+                <h3>Delivery Address</h3>
+                <p>John Doe</p>
+                <p>123, Health Apartments</p>
+                <p>Medical Street, Health City - 560001</p>
+                <p>+91 98765 43210</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
